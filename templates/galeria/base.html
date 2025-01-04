@@ -14,14 +14,9 @@
 </head>
 
 <body>
-    <div class="pagina-inicial">
-        {% include 'galeria/partials/_header.html' %}
-        <main class="principal">
-            {% include 'galeria/partials/_pginicial.html' %}
-            <section class="conteudo">
-                {% block content %}{% endblock %}
-            </section>
-        </main>
-    </div>
+    {% include 'galeria/partials/_menu.html' %}
+    {% block content %}{% endblock %}
     {% include 'galeria/partials/_footer.html' %}
 </body>
+
+</html>
