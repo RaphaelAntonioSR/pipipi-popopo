@@ -13,7 +13,7 @@ class LoginForms(forms.Form):
         ),
     )
     senha=forms.CharField(
-         label="Senha",
+        label="Senha",
         required=True,
         max_length=70,
         widget=forms.PasswordInput(
@@ -48,7 +48,7 @@ class CadastroForms(forms.Form):
         ),
     )
     senha1=forms.CharField(
-         label="Senha",
+        label="Senha",
         required=True,
         max_length=70,
         widget=forms.PasswordInput(
@@ -59,7 +59,7 @@ class CadastroForms(forms.Form):
         ),
     )
     senha2=forms.CharField(
-         label="Confirme sua senha",
+        label="Confirme sua senha",
         required=True,
         max_length=70,
         widget=forms.PasswordInput(
