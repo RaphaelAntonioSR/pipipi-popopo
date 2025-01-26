@@ -24,6 +24,11 @@
             <div class="alert alert-primary">
                 <p id="messages">{{message}}</p>
             </div>
+            {% for error in field.errors %}
+            <div>
+                {{error}}
+            </div>
+            {% endfor %}
             {% endfor %}
             <div class="cabecalho__busca">
                 <div class="busca__fundo">
